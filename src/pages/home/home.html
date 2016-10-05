@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <button light round full>{{weatherData.name}}</button>
+  <ion-list>
+    <ion-item *ngFor="let weather of weatherData.weather">
+      {{weather.description}}
+    </ion-item>
+  </ion-list>
+</ion-content>
